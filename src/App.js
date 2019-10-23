@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Pokegame from './components/Pokegame.js/Pokegame';
+import BrokenClick from './BrokenClick';
 
-function App() {
-	return (
-		<div className='App'>
-			<Pokegame />
-		</div>
-	);
+class App extends Component {
+	render() {
+		return (
+			<div className='App'>
+				<Pokegame />
+				<BrokenClick />
+			</div>
+		);
+	}
 }
 
 export default App;

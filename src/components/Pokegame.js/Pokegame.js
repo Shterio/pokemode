@@ -2,11 +2,8 @@ import React, { Component } from 'react';
 import Pokedext from '../pokedex/Pokedext';
 import data from '../../data';
 
-export class Pokegame extends Component {
-	constructor(props) {
-		super(props);
-		this.state = data;
-	}
+class Pokegame extends Component {
+	state = data;
 
 	render() {
 		let hand1 = [];
